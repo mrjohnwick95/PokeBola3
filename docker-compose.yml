@@ -7,7 +7,6 @@ services:
       POSTGRES_DB: pokefav
     volumes:
       - db-data:/var/lib/postgresql/data
-      - ./bd/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
     ports:
       - "5432:5432"
 
